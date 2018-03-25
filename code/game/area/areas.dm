@@ -26,7 +26,7 @@
 			return
 		related = list(src)
 
-		src.icon = 'alert.dmi'
+		src.icon = 'icons/effects/alert.dmi'
 		src.layer = 10
 	//	update_lights()
 		if(name == "Space")			// override defaults for space
@@ -416,7 +416,7 @@
 					var/obj/LightTest = locate(/obj/effect/alertlighting/atmoslight) in D.loc
 					if(isnull(LightTest))
 						var/obj/effect/alertlighting/atmoslight/F = new/obj/effect/alertlighting/atmoslight(D.loc)
-						var/image/imagelight = image('alert.dmi',F,icon_state = "blueold")
+						var/image/imagelight = image('icons/effects/alert.dmi',F,icon_state = "blueold")
 						world << imagelight
 
 			else if(AEast.density != 1 && AEastA.name != AName)
@@ -433,7 +433,7 @@
 					var/obj/LightTest = locate(/obj/effect/alertlighting/atmoslight) in D.loc
 					if(isnull(LightTest))
 						var/obj/effect/alertlighting/atmoslight/F = new/obj/effect/alertlighting/atmoslight(D.loc)
-						var/image/imagelight = image('alert.dmi',F,icon_state = "blueold")
+						var/image/imagelight = image('icons/effects/alert.dmi',F,icon_state = "blueold")
 						world << imagelight
 						//world << "Image should be placed"
 
@@ -451,7 +451,7 @@
 					var/obj/LightTest = locate(/obj/effect/alertlighting/atmoslight) in D.loc
 					if(isnull(LightTest))
 						var/obj/effect/alertlighting/atmoslight/F = new/obj/effect/alertlighting/atmoslight(D.loc)
-						var/image/imagelight = image('alert.dmi',F,icon_state = "blueold")
+						var/image/imagelight = image('icons/effects/alert.dmi',F,icon_state = "blueold")
 						world << imagelight
 
 			else if(AWest.density != 1 && AWestA.name != AName)
@@ -468,7 +468,7 @@
 					var/obj/LightTest = locate(/obj/effect/alertlighting/atmoslight) in D.loc
 					if(isnull(LightTest))
 						var/obj/effect/alertlighting/atmoslight/F = new/obj/effect/alertlighting/atmoslight(D.loc)
-						var/image/imagelight = image('alert.dmi',F,icon_state = "blueold")
+						var/image/imagelight = image('icons/effects/alert.dmi',F,icon_state = "blueold")
 						world << imagelight
 			else
 				if(src.air_doors_activated != 1)

@@ -758,8 +758,8 @@
 			else
 				if (src.w_uniform)
 					message = "<B>[src]</B> poos in their uniform."
-					playsound(src.loc, 'fart.ogg', 60, 1)
-					playsound(src.loc, 'squishy.ogg', 40, 1)
+					playsound(src.loc, 'sound/effects/fart.ogg', 60, 1)
+					playsound(src.loc, 'sound/effects/fart.ogg', 40, 1)
 //					src.achievement_give("The Brown Medal", 65)
 					src.nutrition -= 80
 					m_type = 2
@@ -767,14 +767,14 @@
 					var/obj/structure/toilet/T = locate() in src.loc
 					if(T && T.open)
 						message = "<B>[src]</B> lands their butt onto a [T] and craps."
-						playsound(src.loc, 'fart.ogg', 60, 1)
-						playsound(src.loc, 'squishy.ogg', 40, 1)
+						playsound(src.loc, 'sound/effects/fart.ogg', 60, 1)
+						playsound(src.loc, 'sound/effects/fart.ogg', 40, 1)
 						src.nutrition -= rand(60,80)
 						m_type = 2
 					else
 						message = "<B>[src]</B> poos on the floor."
-						playsound(src.loc, 'fart.ogg', 60, 1)
-						playsound(src.loc, 'squishy.ogg', 40, 1)
+						playsound(src.loc, 'sound/effects/fart.ogg', 60, 1)
+						playsound(src.loc, 'sound/effects/fart.ogg', 40, 1)
 	//					src.achievement_give("The Brown Medal", 65)
 						var/turf/location = src.loc
 
@@ -910,7 +910,7 @@
 				playsound(src.loc, pick('sound/voice/female_laugh_1.ogg', 'sound/voice/female_laugh_2.ogg'), 100, 1)
 
 		if("fart")
-			playsound(playsound(src.loc, 'fart.ogg', 65, 1))
+			playsound(playsound(src.loc, 'sound/effects/fart.ogg', 65, 1))
 
 		if("elaugh")
 			playsound(src.loc, 'sound/voice/elaugh.ogg', 50, 1)

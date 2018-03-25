@@ -1,7 +1,7 @@
 /obj/structure/writersdesk
 	name = "Writer Desk"
 	desc = "A desk with various tools to write a book"
-	icon = 'structures.dmi'
+	icon = 'icons/obj/structures.dmi'
 	icon_state = "writers"
 	density = 1
 	anchored = 1

@@ -4,7 +4,7 @@
 	density = 0
 	anchored = 1
 	layer = 2
-	icon = 'pooeffect.dmi'
+	icon = 'icons/effects/pooeffect.dmi'
 	icon_state = "floor1"
 	random_icon_states = list("floor1", "floor2", "floor3", "floor4", "floor5", "floor6", "floor7", "floor8")
 //	var/datum/disease/virus = null
@@ -14,7 +14,7 @@
 //	blood_type = null
 
 /obj/effect/decal/cleanable/poo/New()
-	src.icon = 'pooeffect.dmi'
+	src.icon = 'icons/effects/pooeffect.dmi'
 	src.icon_state = pick(src.random_icon_states)
 	for(var/obj/effect/decal/cleanable/poo/shit in src.loc)
 		if(shit != src)
@@ -33,7 +33,7 @@
 	density = 0
 	anchored = 1
 	layer = 2
-	icon = 'pooeffect.dmi'
+	icon = 'icons/effects/pooeffect.dmi'
 	icon_state = "drip1"
 	random_icon_states = list("drip1", "drip2", "drip3", "drip4", "drip5")
 //	blood_DNA = null
@@ -63,7 +63,7 @@
 				way.HasEntered(M, 1)
 			M << "\blue You slipped on the wet poo stain!"
 			M.unlock_medal("Oh Shit!", 0, "Slip on the poo stain!", "easy")
-			playsound(src.loc, 'slip.ogg', 50, 1, -3)
+			playsound(src.loc, 'sound/misc/slip.ogg', 50, 1, -3)
 			M.stunned = 1
 			M.weakened = 3
 
@@ -79,7 +79,7 @@
 	density = 0
 	anchored = 1
 	layer = 2
-	icon = 'pooeffect.dmi'
+	icon = 'icons/effects/pooeffect.dmi'
 	icon_state = "pee1"
 	random_icon_states = list("pee1", "pee2", "pee3")
 //	var/datum/disease/virus = null
@@ -97,7 +97,7 @@
 			M.pulling = null
 			M << "\blue You slipped in the urine puddle!"
 	//		M.achievement_give("Pissed!", 69)
-			playsound(src.loc, 'slip.ogg', 50, 1, -3)
+			playsound(src.loc, 'sound/misc/slip.ogg', 50, 1, -3)
 			M.stunned = 8
 			M.weakened = 5
 

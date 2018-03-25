@@ -219,7 +219,7 @@ obj/item/weapon/gun/energy/staff
 	origin_tech = "combat=1;materials=3;magnets=2;plasmatech=2;engineering=1"
 	projectile_type = "/obj/item/projectile/plasma"
 	cell_type = "/obj/item/weapon/cell/crap/plasmacutter"
-	fire_sound = 'plasma_cutter.ogg'
+	fire_sound = 'sound/weapons/plasma_cutter.ogg'
 	flags = CONDUCT | OPENCONTAINER
 	attack_verb = list("attacked", "slashed", "cut", "sliced")
 

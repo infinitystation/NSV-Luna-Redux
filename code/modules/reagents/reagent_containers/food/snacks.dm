@@ -913,7 +913,7 @@
 /obj/item/weapon/reagent_containers/food/snacks/bananaphone
 	name = "Banana Phone"
 	desc = "Ring ring ring ring ring..."
-	icon = 'items.dmi'
+	icon = 'icons/obj/items.dmi'
 	icon_state = "banana" //needs a new icon.
 	bitesize = 5
 	var/obj/item/device/radio/banana/bananaphone
@@ -926,7 +926,7 @@
 
 	On_Consume()
 		if(!reagents.total_volume)
-			usr << sound('bananaphone.ogg',1)
+			usr << sound('sound/ambience/bananaphone.ogg',1)
 	hear_talk(mob/M as mob, msg)
 		if(bananaphone)
 			bananaphone.hear_talk(M, msg)
@@ -2949,7 +2949,7 @@
 /obj/item/weapon/reagent_containers/food/snacks/poo
 	name = "poo"
 	desc = "It's a poo. How disgusting!"
-	icon = 'poop.dmi'
+	icon = 'icons/obj/poop.dmi'
 	icon_state = "poop2"
 	item_state = "poop"
 	New()
